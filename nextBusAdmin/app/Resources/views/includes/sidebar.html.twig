@@ -1,0 +1,149 @@
+<!-- BEGIN SIDEBAR MENU -->
+<!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+<!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+<!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+<!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+<!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+<ul class="page-sidebar-menu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+    <!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+    <li class="sidebar-toggler-wrapper">
+        <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+        <div class="sidebar-toggler">
+        </div>
+        <!-- END SIDEBAR TOGGLER BUTTON -->
+    </li>
+
+    <li class="start active open">
+        <a href="{{ path('nb_main_homepage') }}">
+            <i class="icon-home"></i>
+            <span class="title">Tableau de bord</span>
+            <span class="selected"></span>
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;">
+            <i class="icon-basket"></i>
+            <span class="title">Catalogue</span>
+            <span class="arrow "></span>
+        </a>
+        <ul class="sub-menu">
+            <li>
+                <a href="{{ path('nb_main_company') }}">
+                    <i class="icon-home"></i>
+                    Compagnie de bus</a>
+            </li>
+            <li>
+                <a href="{{ path('nb_main_bus') }}">
+                    <i class="fa fa-bus"></i>
+                    Bus</a>
+            </li>
+            <li>
+                <a href="{{ path('nb_main_city') }}">
+                    <i class="icon-tag"></i>
+                    Villes</a>
+            </li>
+            <li>
+                <a href="{{ path('nb_main_route') }}">
+                    <i class="fa fa-exchange"></i>
+                    Axes</a>
+            </li>
+            <li>
+                <a href="{{ path('nb_main_travel') }}">
+                    <i class="fa fa-travel"></i>
+                    Voyages</a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="icon-users"></i>
+                    SeatSellers</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="{{ path('nb_main_promotion') }}">
+            <i class="icon-rocket"></i>
+            <span class="title">Gestion des Promotions</span>
+        </a>
+
+    </li>
+    <li>
+        <a href="javascript:;">
+            <i class="icon-diamond"></i>
+            <span class="title">Gestion des reservations</span>
+        </a>
+    </li>
+
+    <li class="heading">
+        <h3 class="uppercase">CMS</h3>
+    </li>
+    <li>
+        <a href="javascript:;">
+            <i class="icon-logout"></i>
+            <span class="title">Destination</span>
+            <span class="arrow "></span>
+        </a>
+        <ul class="sub-menu">
+            <li>
+                <a href="{{ path('nb_main_travel_cms_reseau_international') }}">
+                    Reseau International </a>
+            </li>
+            <li>
+                <a href="{{ path('nb_main_travel_cms_reseau_national') }}">
+                    Reseau National </a>
+            </li>
+            <li>
+                <a href="quick_sidebar_over_content.html">
+                    Horaire</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="javascript:;">
+            <i class="icon-envelope-open"></i>
+            <span class="title">Votre voyage en car </span>
+            <span class="arrow "></span>
+        </a>
+        <ul class="sub-menu">
+            <li>
+                <a href="{{ path('nb_main_travel_cms_why_nextbus') }}">
+                    Pourquoi nextBus ?</a>
+            </li>
+            <li>
+                <a href="{{ path('nb_main_travel_cms_buy_ticket') }}">
+                    Acheter votre nextBus</a>
+            </li>
+            <li>
+                <a href="{{ path('nb_main_travel_cms_edit_ticket') }}">
+                    Modifier votre billet</a>
+            </li>
+            <li>
+                <a href="{{ path('nb_main_travel_cms_preparer_voyage') }}">
+                    Préparer votre voyage</a>
+            </li>
+
+            <li>
+                <a href="email_system.html">
+                    Les bus de nuit</a>
+            </li>
+        </ul>
+    </li>
+
+    <li class="heading">
+        <h3 class="uppercase">Configuration</h3>
+    </li>
+    <li>
+        <a href="{{ path('nb_main_config_contact') }}">
+            <i class="fa fa-phone"></i>
+            <span class="title">Contact</span>
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('nb_main_config_reseau_social') }}">
+            <i class="fa fa-facebook"></i>
+            <span class="title">Reseau Social</span>
+        </a>
+    </li>
+</ul>
+<!-- END SIDEBAR MENU -->
+

@@ -1,0 +1,97 @@
+nb_main_homepage:
+    path:     /
+    defaults: { _controller: NBMainBundle:Main:index }
+nb_main_company:
+    path:     /compagnie-de-transport
+    defaults: { _controller: NBMainBundle:Company:list }
+nb_main_company_add:
+    path:     /compagnie-de-transport/nouveau
+    defaults: { _controller: NBMainBundle:Company:add }
+nb_main_company_edit:
+    path:     /compagnie-de-transport/{id}
+    defaults: { _controller: NBMainBundle:Company:edit }
+nb_main_company_users:
+    path:     /compagnie-de-transport/{companyid}/utilisateurs
+    defaults: { _controller: NBMainBundle:Company:users }
+nb_main_company_users_add:
+    path:     /compagnie-de-transport/{companyid}/utilisateurs/nouveau
+    defaults: { _controller: NBMainBundle:Company:usersAdd }
+
+nb_main_bus:
+    path:     /bus
+    defaults: { _controller: NBMainBundle:Bus:list }
+nb_main_bus_add:
+    path:     /bus/nouveau
+    defaults: { _controller: NBMainBundle:Bus:add }
+nb_main_bus_edit:
+    path:     /bus/{id}
+    defaults: { _controller: NBMainBundle:Bus:edit }
+
+nb_main_city:
+    path:     /villes
+    defaults: { _controller: NBMainBundle:City:list }
+nb_main_city_add:
+    path:     /villes/nouveau
+    defaults: { _controller: NBMainBundle:City:add }
+nb_main_city_edit:
+    path:     /villes/{id}
+    defaults: { _controller: NBMainBundle:City:edit }
+
+
+nb_main_route:
+    path:     /axes
+    defaults: { _controller: NBMainBundle:Route:list }
+nb_main_route_add:
+    path:     /axes/nouveau
+    defaults: { _controller: NBMainBundle:Route:add }
+nb_main_route_edit:
+    path:     /axes/{id}
+    defaults: { _controller: NBMainBundle:Route:edit }
+
+nb_main_travel:
+    path:     /voyages
+    defaults: { _controller: NBMainBundle:Travel:list }
+nb_main_travel_add:
+    path:     /voyages/nouveau
+    defaults: { _controller: NBMainBundle:Travel:add }
+nb_main_travel_edit:
+    path:     /voyages/{id}
+    defaults: { _controller: NBMainBundle:Travel:edit }
+
+nb_main_promotion:
+    path:     /promotion
+    defaults: { _controller: NBMainBundle:Promo:list }
+nb_main_promotion_edit:
+    path:     /promotion/{id}
+    defaults: { _controller: NBMainBundle:Promo:edit }
+nb_main_promotion_add:
+    path:     /promotion/nouveau
+    defaults: { _controller: NBMainBundle:Promo:add }
+
+
+nb_main_travel_cms_reseau_national:
+    path:     /cms/reseau-national
+    defaults: { _controller: NBMainBundle:CMS:national }
+nb_main_travel_cms_reseau_international:
+    path:     /cms/reseau-international
+    defaults: { _controller: NBMainBundle:CMS:international }
+nb_main_travel_cms_why_nextbus:
+    path:     /cms/pourquoi-nextbus
+    defaults: { _controller: NBMainBundle:CMS:whyus }
+nb_main_travel_cms_buy_ticket:
+    path:     /cms/acheter-votre-billet
+    defaults: { _controller: NBMainBundle:CMS:buy }
+nb_main_travel_cms_edit_ticket:
+    path:     /cms/modifier-votre-billet
+    defaults: { _controller: NBMainBundle:CMS:modifier }
+nb_main_travel_cms_preparer_voyage:
+    path:     /cms/preparer-votre-voyage
+    defaults: { _controller: NBMainBundle:CMS:preparer }
+
+
+nb_main_config_contact:
+    path:     /configuration/contact
+    defaults: { _controller: NBMainBundle:Config:contact }
+nb_main_config_reseau_social:
+    path:     /configuration/social-network
+    defaults: { _controller: NBMainBundle:Config:social }

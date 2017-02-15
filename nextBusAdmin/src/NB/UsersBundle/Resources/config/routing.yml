@@ -1,0 +1,3 @@
+nb_users_homepage:
+    path:     /
+    defaults: { _controller: NBUsersBundle:Default:index }
